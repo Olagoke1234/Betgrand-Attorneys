@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./images/lawbackground1.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-color: gray;
+  background-blend-mode: multiply;
+}
+
+/* hamburger menu styling */
+
+#Menu-wrap {
+  position: relative;
+  margin: 0;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#Menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  z-index: 5;
+  width: 60px;
+  height: 60px;
+  opacity: 0;
+}
+
+#Menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  z-index: 2;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0.85;
+}
+
+#Menu-wrap .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+#Menu-wrap .hamburger > div:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Menu-wrap .hamburger > div:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+#Menu-wrap .toggler:checked + .hamburger > div:before,
+#Menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#Menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+#Menu-wrap #Menu {
+  position: absolute;
+  margin-top: 65px;
+  right: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease;
+  height: 91.1vh;
+  width: 350px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+#Menu-wrap .toggler:checked ~ #Menu {
+  visibility: visible;
+  opacity: 1;
+}
+
+#Menu li {
+  margin-top: 20px;
+  padding: 8px;
+  text-decoration: none;
+  list-style: none;
+}
+
+#Menu li a {
+  text-decoration: none;
+  color: black;
+  font-family: system-ui;
+  font-size: 20px;
+}
+
+#Menu li a:hover {
+  color: lightskyblue;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.textandarrow {
+  display: flex;
+}
+
+.textandarrow h1 {
+  font-family: system-ui;
+  font-size: 3rem;
+  color: white;
+}
+
+.textandarrow img {
+  height: 20px;
+  margin-left: 10px;
+  margin-top: 15px;
+  transform: scale(1.5);
+}
+
+.intro p {
+  text-align: left;
+  font-size: 20px;
+  color: white;
+  font-family: system-ui;
+}
