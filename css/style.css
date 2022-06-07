@@ -4,8 +4,10 @@
 }
 
 body {
-  background-image: url(./images/lawbackground1.jpg);
+  background-image: url(../images/lawbackground1.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 100vh;
   background-color: gray;
   background-blend-mode: multiply;
@@ -16,8 +18,8 @@ body {
 #Menu-wrap {
   position: relative;
   margin: 0;
-  top: 0;
-  right: 0;
+  top: 25px;
+  right: 0px;
   z-index: 1;
 }
 
@@ -98,12 +100,12 @@ body {
 
 #Menu-wrap #Menu {
   position: absolute;
-  margin-top: 65px;
+  margin-top: 64.5px;
   right: 0px;
   visibility: hidden;
   opacity: 0;
   transition: all 1s ease;
-  height: 91.1vh;
+  height: 87.8vh;
   width: 350px;
   background-color: white;
   border-radius: 5px;
@@ -132,16 +134,30 @@ body {
   color: lightskyblue;
 }
 
+.companyName {
+  margin-left: 15px;
+  background-blend-mode: multiply;
+}
+
+.companyName img {
+  height: 150px;
+  width: 250px;
+  object-fit: contain;
+  margin-left: 5px;
+  margin-top: -20px;
+}
+
 .intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  height: 70vh;
   padding: 20px;
 }
 
 .textandarrow {
   display: flex;
+  position: relative;
 }
 
 .textandarrow h1 {
@@ -150,11 +166,19 @@ body {
   color: white;
 }
 
+.textandarrow i {
+  color: white;
+  transform: scale(0.8);
+  position: absolute;
+  bottom: 0;
+}
+
 .textandarrow img {
   height: 20px;
   margin-left: 10px;
   margin-top: 15px;
   transform: scale(1.5);
+  color: white;
 }
 
 .intro p {
