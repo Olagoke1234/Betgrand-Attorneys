@@ -4,13 +4,7 @@
 }
 
 body {
-  background-image: url(../images/lawbackground1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
-  background-color: gray;
-  background-blend-mode: multiply;
+  background-color: rgb(218, 216, 216);
 }
 
 .welcome-body {
@@ -38,6 +32,7 @@ body {
 .companyName h1 {
   font-family: system-ui;
 }
+
 /* hamburger menu styling */
 
 #Menu-wrap {
@@ -160,43 +155,68 @@ body {
   color: lightskyblue;
 }
 
-.intro {
+.coyName {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 70vh;
-  padding: 20px;
+  align-items: center;
+  background-color: rgb(17, 17, 122);
+  padding: 20px 120px;
 }
 
-.textandarrow {
+.coyName img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.coyName h3 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 10px;
+}
+
+.coyName .contact-info {
   display: flex;
-  position: relative;
 }
 
-.textandarrow h1 {
-  font-family: system-ui;
-  font-size: 3rem;
+.coyName .contact-info p {
+  margin: 5px 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.coyName .contact-info a {
+  text-decoration: none;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: oblique;
+}
+
+.coyName .services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.coyName .services a {
+  text-decoration: none;
+  color: white;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 5px 20px;
+  text-align: center;
+}
+
+.coyName .credit p {
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 10px;
   color: white;
 }
 
-.textandarrow i {
+.coyName .credit a {
+  text-decoration: none;
+  font-style: oblique;
   color: white;
-  transform: scale(0.8);
-  position: absolute;
-  bottom: 0;
-}
-
-.textandarrow img {
-  height: 20px;
-  margin-left: 10px;
-  margin-top: 15px;
-  transform: scale(1.5);
-  color: white;
-}
-
-.intro p {
-  text-align: left;
-  font-size: 20px;
-  color: white;
-  font-family: system-ui;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
 }
