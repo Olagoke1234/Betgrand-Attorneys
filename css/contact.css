@@ -5,6 +5,10 @@
 
 body {
   background-color: rgb(218, 216, 216);
+  background-image: url(../images/formbackground.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .welcome-body {
@@ -153,6 +157,172 @@ body {
 
 #Menu li a:hover {
   color: lightskyblue;
+}
+
+.contact-title {
+  height: 100px;
+  /* background-color: rgb(218, 216, 216); */
+  border-bottom: 300px;
+  padding: 100px 20px;
+}
+
+.contact-title h1 {
+  color: rgb(17, 17, 122);
+  font-family: system-ui;
+  font-size: 45px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.contact-title p {
+  color: white;
+  font-family: system-ui;
+  font-size: 18px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.companyForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  margin: 30px;
+  padding: 30px;
+  border-radius: 5px;
+  border: 1px gray solid;
+  box-shadow: 5px 5px rgb(74, 74, 114), 10px 10px rgb(173, 107, 107),
+    15px 15px rgb(75, 83, 75);
+}
+
+.companyForm img {
+  width: 80px;
+  height: 80px;
+  margin-right: 3px;
+}
+
+.companyForm h1 {
+  font-family: system-ui;
+  margin-bottom: 30px;
+}
+
+.companyForm h2 {
+  font-family: system-ui;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.companyForm p {
+  font-family: system-ui;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.checkbox-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.checkbox-section .checkboxes {
+  margin-bottom: 10px;
+  display: inline-flex;
+}
+
+.checkbox-section .checkboxes input {
+  margin-right: 7px;
+  margin-top: 10px;
+  padding: 8px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.checkbox-section .checkboxes label {
+  background-color: rgb(87, 87, 148);
+  border-radius: 15px;
+  padding: 8px;
+}
+
+.radio-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.radio-section .radio {
+  margin-bottom: 10px;
+  display: inline-flex;
+}
+
+.radio-section .radio input {
+  margin-right: 7px;
+  margin-top: 10px;
+  padding: 8px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.radio-section .radio label {
+  background-color: rgb(87, 87, 148);
+  border-radius: 15px;
+  padding: 8px;
+}
+
+.to-fill {
+  display: flex;
+  flex-direction: column;
+  max-width: 1300px;
+}
+
+.text-input input {
+  margin: 20px 0;
+  width: auto;
+  height: 30px;
+  border-radius: 3px;
+  border: 0.3px solid black;
+  font-size: 20px;
+}
+
+.text-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-input label {
+  color: rgb(87, 87, 148);
+  font-size: 20px;
+}
+
+.btnSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnSection button {
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: rgb(87, 87, 148);
+  color: white;
+  cursor: pointer;
+  transition: all 1s ease-in;
+}
+
+.btnSection button:hover {
+  color: rgb(87, 87, 148);
+  background-color: white;
 }
 
 .coyName {
