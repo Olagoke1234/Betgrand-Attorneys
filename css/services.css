@@ -155,151 +155,99 @@ body {
   color: lightskyblue;
 }
 
-.about-intro {
-  background-color: white;
-  margin: 10px 10px;
-  padding: 60px 20px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
+.services-title {
+  height: 100px;
+  background-color: rgb(218, 216, 216);
+  border-bottom: 300px;
+  padding: 100px 20px;
 }
 
-@media only screen and (min-width: 900px) {
-  .about-intro {
-    width: 900px;
-    background-color: rgb(218, 216, 216);
-    padding: 20px 20px;
-  }
-}
-
-.about-intro h1 {
-  font-family: "Titillium Web", sans-serif;
-  padding: 20px 0;
-  font-size: 30px;
+.services-title h1 {
   color: rgb(17, 17, 122);
+  font-family: system-ui;
+  font-size: 45px;
+  font-weight: bolder;
+  text-align: center;
 }
 
-@media only screen and (min-width: 900px) {
-  .about-intro h1 {
-    font-size: 45px;
-  }
-}
-
-.about-intro p {
-  font-family: "Titillium Web", sans-serif;
-  line-height: 1.5rem;
-  font-size: 15px;
+.services-title p {
   color: black;
-  text-align: justify;
+  font-family: system-ui;
+  font-size: 18px;
+  text-align: center;
 }
 
-@media only screen and (min-width: 900px) {
-  .about-intro p {
-    font-size: 20px;
-    text-align: justify;
-  }
+.service-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.other-info {
+.ind-services {
+  background-color: white;
+  margin: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 30px;
+  border-radius: 3px;
+  margin: 50px;
+  position: relative;
+  height: 300px;
+  width: 300px;
 }
 
-@media only screen and (min-width: 900px) {
-  .other-info {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 40px;
-  }
+.get-started {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.vision {
-  padding: 40px 40px;
-}
-
-.vision img {
-}
-
-.vision h2 {
-  font-family: "Titillium Web", sans-serif;
-  font-size: 35px;
-  font-weight: bolder;
-  color: rgb(17, 17, 122);
-}
-
-.vision p {
-  line-height: 2rem;
+#contactBtn {
   width: 400px;
-  text-align: justify;
+  height: 50px;
+  background-color: rgb(58, 58, 119);
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: system-ui;
+  color: white;
+  cursor: pointer;
+}
+
+#contactBtn:hover {
+  background-color: white;
+  color: rgb(58, 58, 119);
+  border: 2px solid black;
+}
+
+.ind-services img {
+  height: 100px;
+  color: blue;
+}
+
+.ind-services #select-service {
+  width: 17px;
+  height: 17px;
+  border-radius: 50px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.ind-services h2 {
+  color: rgb(17, 17, 122);
+  font-family: system-ui;
   font-size: 18px;
 }
 
-.comp-advantage {
-  padding: 30px 20px;
-  background-color: rgb(17, 17, 122);
-}
-
-.comp-advantage img {
-}
-
-.comp-advantage h2 {
-  font-family: "Titillium Web", sans-serif;
-  font-size: 35px;
-  font-weight: bolder;
-  color: black;
-}
-
-.comp-advantage p {
-  line-height: 1.5rem;
-  width: 400px;
-  text-align: justify;
-  font-size: 17px;
-  margin-bottom: 40px;
-}
-
-.feedback {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 100px;
-}
-
-.feedback h1 {
+.ind-services {
+  color: rgb(34, 90, 124);
   font-family: system-ui;
-  color: rgb(17, 17, 122);
-  font-size: 25px;
-}
-
-.all-comments {
-  display: flex;
-  flex-direction: column;
-}
-
-@media only screen and (min-width: 900px) {
-  .all-comments {
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 40px;
-    flex-wrap: wrap;
-  }
-}
-
-.comments {
-  background-color: rgb(253, 247, 247);
-  margin: 50px 50px;
-  padding: 20px 20px;
-  border-radius: 5px;
-  width: 300px;
-}
-.comments p {
-  line-height: 1.7rem;
-  font-family: "Josefin Sans", sans-serif;
-  text-align: center;
+  font-size: 15px;
 }
 
 .coyName {
