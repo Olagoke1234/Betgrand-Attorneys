@@ -4,12 +4,12 @@
 }
 
 body {
-  background-image: url(../images/lawbackground3.jpg);
+  background-image: url(../images/lawbackground1.jpg);
   background-size: cover;
   background-repeat: repeat;
   background-attachment: fixed;
   height: 100vh;
-  background-color: rgb(93, 86, 202);
+  background-color: lightblue;
   background-blend-mode: multiply;
 }
 
