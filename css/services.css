@@ -270,20 +270,25 @@ body {
   margin-bottom: 10px;
 }
 
-.coyName .contact-info {
+.coyName .contact-inform {
   display: flex;
 }
 
-.coyName .contact-info p {
+.coyName .contact-inform p {
   margin: 5px 10px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
 }
 
-.coyName .contact-info a {
+.coyName .contact-inform a {
   text-decoration: none;
-  color: white;
+  color: blue;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-style: oblique;
+}
+
+.coyName .contact-inform .fa {
+  color: blue;
 }
 
 .coyName .services {
