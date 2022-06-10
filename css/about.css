@@ -136,7 +136,7 @@ body {
   transition: all 1s ease;
   height: 88.5vh;
   width: 350px;
-  background-color: white;
+  background-color: rgb(48, 7, 7);
   border-radius: 5px;
 }
 
@@ -154,7 +154,7 @@ body {
 
 #Menu li a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-family: system-ui;
   font-size: 20px;
 }
