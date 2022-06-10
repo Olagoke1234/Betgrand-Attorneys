@@ -40,7 +40,9 @@ body {
 }
 
 .companyName h1 {
-  font-family: system-ui;
+  font-family: "Abril Fatface", cursive;
+  color: rgb(17, 17, 122);
+  letter-spacing: 3px;
 }
 
 /* hamburger menu styling */
