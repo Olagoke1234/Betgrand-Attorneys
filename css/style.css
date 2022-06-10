@@ -171,6 +171,7 @@ body {
 .textandarrow {
   display: flex;
   position: relative;
+  max-width: 800px;
 }
 
 .textandarrow h1 {

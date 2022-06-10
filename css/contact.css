@@ -389,6 +389,7 @@ form {
 
 .coyName .contact-inform {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .coyName .contact-inform p {
