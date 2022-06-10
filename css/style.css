@@ -4,9 +4,9 @@
 }
 
 body {
-  background-image: url(../images/lawbackground1.jpg);
+  background-image: url(../images/lawbackground3.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
   height: 100vh;
   background-color: gray;
@@ -37,6 +37,7 @@ body {
 
 .companyName h1 {
   font-family: system-ui;
+  color: white;
 }
 /* hamburger menu styling */
 
@@ -79,7 +80,7 @@ body {
   position: relative;
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -92,7 +93,7 @@ body {
   top: -10px;
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,7 +105,7 @@ body {
   top: 10px;
   width: 100%;
   height: 2px;
-  background-color: black;
+  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
