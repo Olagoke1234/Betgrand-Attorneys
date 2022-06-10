@@ -232,6 +232,10 @@ hr {
   font-style: italic;
 }
 
+.leadership-section .ind-section a .fa {
+  color: white;
+}
+
 .coyName {
   display: flex;
   flex-direction: column;
