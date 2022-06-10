@@ -9,7 +9,7 @@ body {
   background-repeat: repeat;
   background-attachment: fixed;
   height: 100vh;
-  background-color: gray;
+  background-color: rgb(93, 86, 202);
   background-blend-mode: multiply;
 }
 

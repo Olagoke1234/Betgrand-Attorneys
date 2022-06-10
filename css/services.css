@@ -16,6 +16,12 @@ body {
   height: 60px;
 }
 
+.welcome-body a {
+  text-decoration: none;
+  color: black;
+  font-family: system-ui;
+}
+
 .companyName {
   flex: 50%;
   display: flex;
@@ -268,6 +274,7 @@ body {
 .coyName h3 {
   font-family: "Josefin Sans", sans-serif;
   margin-bottom: 10px;
+  color: white;
 }
 
 .coyName .contact-inform {
