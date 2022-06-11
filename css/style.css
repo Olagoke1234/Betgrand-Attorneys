@@ -1,6 +1,9 @@
 * {
   margin: 0;
   padding: 0;
+  --company-name-load-time: 300ms;
+  --menu-wrap-load-time: 500ms;
+  --textandarrow-load-time: 800ms;
 }
 
 body {
@@ -27,6 +30,20 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  animation: company-name-load var(--company-name-load-time) ease-in;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+}
+
+@keyframes company-name-load {
+  0% {
+    transform: translateY(-100%);
+    transform: scale(0);
+  }
+  100% {
+    transform: translateY(0);
+    transform: scale(1);
+  }
 }
 
 .companyName img {
@@ -49,6 +66,20 @@ body {
   top: -30px;
   right: 0px;
   z-index: 1;
+  animation: menu-wrap-load var(--menu-wrap-load-time) ease-in;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+}
+
+@keyframes menu-wrap-load {
+  0% {
+    transform: translateX(100%);
+    transform: scale(0);
+  }
+  100% {
+    transform: translateX(0);
+    transform: scale(1);
+  }
 }
 
 #Menu-wrap .toggler {
@@ -134,14 +165,26 @@ body {
   opacity: 0;
   transition: all 1s ease;
   height: 88.5vh;
-  width: 350px;
-  background-color: rgb(48, 7, 7);
+  width: 25vw;
+  background-color: #bc6c25;
   border-radius: 5px;
 }
 
 #Menu-wrap .toggler:checked ~ #Menu {
   visibility: visible;
   opacity: 1;
+  animation: menu-load 500ms ease-in;
+  animation-fill-mode: forwards;
+  transform: translateX(0px);
+}
+
+@keyframes menu-load {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 #Menu li {
@@ -153,7 +196,7 @@ body {
 
 #Menu li a {
   text-decoration: none;
-  color: white
+  color: white;
   font-family: system-ui;
   font-size: 20px;
 }
@@ -174,6 +217,20 @@ body {
   display: flex;
   position: relative;
   max-width: 800px;
+  animation: textandarrow-load var(--textandarrow-load-time) ease-in;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+}
+
+@keyframes textandarrow-load {
+  0% {
+    transform: translateY(-1000%);
+    transform: scale(0);
+  }
+  100% {
+    transform: translateY(0);
+    transform: scale(1);
+  }
 }
 
 .textandarrow h1 {
@@ -183,10 +240,20 @@ body {
 }
 
 .textandarrow i {
-  color: white;
-  transform: scale(0.8);
+  color: #bc6c25;
+  transform: scale(0.4);
   position: absolute;
   bottom: 0;
+  animation: oscillate 1000ms ease-in-out infinite;
+}
+
+@keyframes oscillate {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(10px);
+  }
 }
 
 .textandarrow img {
@@ -202,4 +269,18 @@ body {
   font-size: 20px;
   color: white;
   font-family: system-ui;
+  animation: intro-p-load 800ms ease-in;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+}
+
+@keyframes intro-p-load {
+  0% {
+    transform: translateY(-1000%);
+    transform: scale(0);
+  }
+  100% {
+    transform: translateY(0);
+    transform: scale(1);
+  }
 }
