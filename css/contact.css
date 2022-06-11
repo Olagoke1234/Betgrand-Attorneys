@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  --company-name-load-time: 300ms;
+  --menu-wrap-load-time: 300ms;
 }
 
 body {
@@ -9,6 +11,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 .welcome-body {
@@ -31,6 +34,20 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  animation: company-name-load var(--company-name-load-time) ease-in;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+}
+
+@keyframes company-name-load {
+  0% {
+    transform: translateY(-100%);
+    transform: scale(0);
+  }
+  100% {
+    transform: translateY(0);
+    transform: scale(1);
+  }
 }
 
 .companyName img {
@@ -54,6 +71,20 @@ body {
   top: -30px;
   right: 0px;
   z-index: 1;
+  animation: menu-wrap-load var(--menu-wrap-load-time) ease-in;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+}
+
+@keyframes menu-wrap-load {
+  0% {
+    transform: translateX(100%);
+    transform: scale(0);
+  }
+  100% {
+    transform: translateX(0);
+    transform: scale(1);
+  }
 }
 
 #Menu-wrap .toggler {
@@ -142,11 +173,33 @@ body {
   width: 25vw;
   background-color: #bc6c25;
   border-radius: 5px;
+  animation: menu-unload 500ms ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menu-unload {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1000px);
+  }
 }
 
 #Menu-wrap .toggler:checked ~ #Menu {
   visibility: visible;
   opacity: 1;
+  animation: menu-load 500ms ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menu-load {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 #Menu li {
@@ -173,12 +226,51 @@ body {
   padding: 100px 20px;
 }
 
+.contact-title h1 {
+  animation: contact-title-h1-load 500ms ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes contact-title-h1-load {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.contact-title p {
+  animation: contact-title-p-load 500ms ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes contact-title-p-load {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .contact-info {
   background-color: rgb(218, 216, 216);
   padding: 30px 30px;
   margin: 30px;
   border-radius: 10px;
   max-width: 900px;
+  animation: contact-info-load 800ms ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes contact-info-load {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @media only screen and (min-width: 900px) {

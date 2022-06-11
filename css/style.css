@@ -14,6 +14,7 @@ body {
   height: 100vh;
   background-color: lightblue;
   background-blend-mode: multiply;
+  overflow-x: hidden;
 }
 
 .welcome-body {
@@ -168,6 +169,17 @@ body {
   width: 25vw;
   background-color: #bc6c25;
   border-radius: 5px;
+  animation: menu-unload 500ms ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menu-unload {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1000px);
+  }
 }
 
 #Menu-wrap .toggler:checked ~ #Menu {
@@ -175,7 +187,6 @@ body {
   opacity: 1;
   animation: menu-load 500ms ease-in;
   animation-fill-mode: forwards;
-  transform: translateX(0px);
 }
 
 @keyframes menu-load {
@@ -244,7 +255,7 @@ body {
   transform: scale(0.4);
   position: absolute;
   bottom: 0;
-  animation: oscillate 1000ms ease-in-out infinite;
+  animation: oscillate 1000ms infinite ease-in-out;
 }
 
 @keyframes oscillate {

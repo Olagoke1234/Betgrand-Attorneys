@@ -1,10 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  --company-name-load-time: 300ms;
+  --menu-wrap-load-time: 500ms;
 }
 
 body {
   background-color: rgb(218, 216, 216);
+  overflow-x: hidden;
 }
 
 .welcome-body {
@@ -27,6 +30,20 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  animation: company-name-load var(--company-name-load-time) ease-in;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+}
+
+@keyframes company-name-load {
+  0% {
+    transform: translateY(-100%);
+    transform: scale(0);
+  }
+  100% {
+    transform: translateY(0);
+    transform: scale(1);
+  }
 }
 
 .companyName img {
@@ -50,6 +67,20 @@ body {
   top: -30px;
   right: 0px;
   z-index: 1;
+  animation: menu-wrap-load var(--menu-wrap-load-time) ease-in;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+}
+
+@keyframes menu-wrap-load {
+  0% {
+    transform: translateX(100%);
+    transform: scale(0);
+  }
+  100% {
+    transform: translateX(0);
+    transform: scale(1);
+  }
 }
 
 #Menu-wrap .toggler {
@@ -138,11 +169,33 @@ body {
   width: 25vw;
   background-color: #bc6c25;
   border-radius: 5px;
+  animation: menu-unload 500ms ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menu-unload {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1000px);
+  }
 }
 
 #Menu-wrap .toggler:checked ~ #Menu {
   visibility: visible;
   opacity: 1;
+  animation: menu-load 500ms ease-in;
+  animation-fill-mode: forwards;
+}
+
+@keyframes menu-load {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 #Menu li {
@@ -176,6 +229,17 @@ body {
   font-size: 45px;
   font-weight: bolder;
   text-align: center;
+  animation: service-title-h1-load 500ms ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes service-title-h1-load {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .services-title p {
@@ -183,6 +247,17 @@ body {
   font-family: system-ui;
   font-size: 18px;
   text-align: center;
+  animation: service-title-p-load 500ms ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes service-title-p-load {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .service-details {
@@ -191,6 +266,17 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  animation: service-details-load 800ms ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes service-details-load {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .ind-services {
