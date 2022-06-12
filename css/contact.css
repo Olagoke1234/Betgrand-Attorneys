@@ -400,6 +400,10 @@ form {
   display: inline-flex;
 }
 
+.radio-section .radio label {
+  font-size: 12px;
+}
+
 .radio-section .radio input {
   margin-right: 7px;
   margin-top: 10px;
