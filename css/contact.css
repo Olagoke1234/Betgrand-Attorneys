@@ -409,7 +409,7 @@ form {
   color: white;
 }
 
-.radio-section .radio input {
+.radio-section .radio label input {
   margin-right: 7px;
   margin-top: 10px;
   padding: 8px;
