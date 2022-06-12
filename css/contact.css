@@ -402,12 +402,16 @@ form {
   align-items: center;
 }
 
+.radio-section .radio .radio-div {
+  margin-right: 30px;
+}
+
 .radio-section .radio .radio-div label {
   background-color: rgb(87, 87, 148);
   border-radius: 15px;
   padding: 8px;
   text-align: center;
-  font-size: 12px;
+  font-size: 20px;
   color: white;
 }
 
@@ -415,8 +419,8 @@ form {
   margin-right: 20px;
   margin-top: 20px;
   padding: 8px;
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
 }
 
