@@ -397,10 +397,12 @@ form {
 
 .radio-section .radio {
   margin-bottom: 10px;
-  display: inline-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.radio-section .radio label {
+.radio-section .radio .radio-div label {
   background-color: rgb(87, 87, 148);
   border-radius: 15px;
   padding: 8px;
@@ -409,9 +411,9 @@ form {
   color: white;
 }
 
-.radio-section .radio input {
-  margin-right: 10px;
-  margin-top: 10px;
+.radio-section .radio .radio-div input {
+  margin-right: 20px;
+  margin-top: 20px;
   padding: 8px;
   width: 25px;
   height: 25px;
