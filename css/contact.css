@@ -384,6 +384,7 @@ form {
   text-align: center;
   font-size: 12px;
   color: white;
+  font-family: system-ui;
 }
 
 .radio-section {
@@ -404,23 +405,29 @@ form {
 
 .radio-section .radio .radio-div {
   margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .radio-section .radio .radio-div label {
   background-color: rgb(87, 87, 148);
   border-radius: 15px;
-  padding: 8px;
+  padding: 12px;
   text-align: center;
-  font-size: 20px;
+  font-size: 12px;
   color: white;
+  margin-right: 10px;
+  font-family: system-ui;
+  width: 30px;
 }
 
 .radio-section .radio .radio-div input {
-  margin-right: 20px;
-  margin-top: 20px;
+  margin-right: 10px;
+  margin-top: 0px;
   padding: 8px;
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
 }
 
