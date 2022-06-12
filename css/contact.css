@@ -410,11 +410,11 @@ form {
 }
 
 .radio-section .radio input {
-  margin-right: 7px;
+  margin-right: 10px;
   margin-top: 10px;
   padding: 8px;
-  width: 18px;
-  height: 18px;
+  width: 25px;
+  height: 25px;
   border-radius: 50%;
 }
 
