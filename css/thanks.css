@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  --company-name-load-time: 300ms;
+  --menu-wrap-load-time: 500ms;
+  --textandarrow-load-time: 800ms;
+}
+
+body {
+  background-image: url(../images/lawbackground1.jpg);
+  background-size: cover;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  background-color: lightblue;
+  background-blend-mode: multiply;
+  overflow-x: hidden;
+}
+
+.welcome-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  height: 60px;
+}
+
+.welcome-body a {
+  text-decoration: none;
+}
+
+.companyName {
+  flex: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  animation: company-name-load var(--company-name-load-time) ease-in;
+  animation-fill-mode: forwards;
+  transform: scale(0);
+}
+
+@keyframes company-name-load {
+  0% {
+    transform: translateY(-100%);
+    transform: scale(0);
+  }
+  100% {
+    transform: translateY(0);
+    transform: scale(1);
+  }
+}
+
+.companyName img {
+  width: 80px;
+  height: 80px;
+  margin-right: 3px;
+}
+
+.companyName h1 {
+  font-family: "Abril Fatface", cursive;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.thanks {
+  display: flex;
+  height: 63.6vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(106, 106, 143);
+}
+
+.thanks .text {
+  background-color: rgb(106, 106, 143);
+  margin-top: 0px;
+  border-radius: 10px;
+}
+
+.thanks h1 {
+  font-family: system-ui;
+  font-size: 40px;
+  color: white;
+}
+
+.coyName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(17, 17, 122);
+  padding: 20px 120px;
+}
+
+.coyName img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.coyName h3 {
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.coyName .contact-inform {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.coyName .contact-inform p {
+  margin: 5px 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+}
+
+.coyName .contact-inform a {
+  text-decoration: none;
+  color: blue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-style: oblique;
+}
+
+.coyName .contact-inform .fa {
+  color: blue;
+}
+
+.coyName .services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.coyName .services a {
+  text-decoration: none;
+  color: white;
+  font-style: italic;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 5px 20px;
+  text-align: center;
+}
+
+.coyName .credit p {
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.coyName .credit a {
+  text-decoration: none;
+  font-style: oblique;
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
