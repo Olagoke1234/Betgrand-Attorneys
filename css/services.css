@@ -286,13 +286,39 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: justify;
   padding: 30px;
   border-radius: 3px;
   margin: 50px;
   position: relative;
-  height: 300px;
+  height: auto;
   width: 300px;
+}
+
+.ind-services .text .moreText {
+  display: none;
+}
+
+.ind-services .text.show-more .moreText {
+  display: inline;
+}
+
+.ind-services .read-more-btn {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(218, 216, 216);
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: black;
+  font-family: system-ui;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.ind-services .read-more-btn:hover {
+  background-color: black;
+  color: white;
 }
 
 .get-started {
@@ -336,6 +362,7 @@ body {
   color: rgb(17, 17, 122);
   font-family: system-ui;
   font-size: 18px;
+  margin-top: 20px;
 }
 
 .ind-services {
