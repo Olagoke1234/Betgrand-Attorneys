@@ -292,7 +292,7 @@ body {
   margin: 50px;
   position: relative;
   height: auto;
-  width: 300px;
+  width: 500px;
 }
 
 .ind-services .text .moreText {
@@ -317,6 +317,162 @@ body {
 }
 
 .ind-services .read-more-btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.ind-services .text-one .moreText-one {
+  display: none;
+}
+
+.ind-services .text-one.show-moreOfOne .moreText-one {
+  display: inline;
+}
+
+.ind-services .read-more-btn-one {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(218, 216, 216);
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: black;
+  font-family: system-ui;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.ind-services .read-more-btn-one:hover {
+  background-color: black;
+  color: white;
+}
+
+.ind-services .text-two .moreText-two {
+  display: none;
+}
+
+.ind-services .text-two.show-moreOfTwo .moreText-two {
+  display: inline;
+}
+
+.ind-services .read-more-btn-two {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(218, 216, 216);
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: black;
+  font-family: system-ui;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.ind-services .read-more-btn-two:hover {
+  background-color: black;
+  color: white;
+}
+
+.ind-services .text-three .moreText-three {
+  display: none;
+}
+
+.ind-services .text-three.show-moreOfThree .moreText-three {
+  display: inline;
+}
+
+.ind-services .read-more-btn-three {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(218, 216, 216);
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: black;
+  font-family: system-ui;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.ind-services .read-more-btn-three:hover {
+  background-color: black;
+  color: white;
+}
+
+.ind-services .text-four .moreText-four {
+  display: none;
+}
+
+.ind-services .text-four.show-moreOfFour .moreText-four {
+  display: inline;
+}
+
+.ind-services .read-more-btn-four {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(218, 216, 216);
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: black;
+  font-family: system-ui;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.ind-services .read-more-btn-four:hover {
+  background-color: black;
+  color: white;
+}
+
+.ind-services .text-five .moreText-five {
+  display: none;
+}
+
+.ind-services .text-five.show-moreOfFive .moreText-five {
+  display: inline;
+}
+
+.ind-services .read-more-btn-five {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(218, 216, 216);
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: black;
+  font-family: system-ui;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.ind-services .read-more-btn-five:hover {
+  background-color: black;
+  color: white;
+}
+
+.ind-services .text-six .moreText-six {
+  display: none;
+}
+
+.ind-services .text-six.show-moreOfSix .moreText-six {
+  display: inline;
+}
+
+.ind-services .read-more-btn-six {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: rgb(218, 216, 216);
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: black;
+  font-family: system-ui;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.ind-services .read-more-btn-six:hover {
   background-color: black;
   color: white;
 }
