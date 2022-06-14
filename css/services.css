@@ -303,6 +303,10 @@ body {
   display: inline;
 }
 
+.ind-services .text.show-more .dots {
+  display: none;
+}
+
 .ind-services .read-more-btn {
   margin-top: 10px;
   padding: 10px;
@@ -327,6 +331,10 @@ body {
 
 .ind-services .text-one.show-moreOfOne .moreText-one {
   display: inline;
+}
+
+.ind-services .text-one.show-moreOfOne .dots {
+  display: none;
 }
 
 .ind-services .read-more-btn-one {
@@ -355,6 +363,10 @@ body {
   display: inline;
 }
 
+.ind-services .text-two.show-moreOfTwo .dots {
+  display: none;
+}
+
 .ind-services .read-more-btn-two {
   margin-top: 10px;
   padding: 10px;
@@ -379,6 +391,10 @@ body {
 
 .ind-services .text-three.show-moreOfThree .moreText-three {
   display: inline;
+}
+
+.ind-services .text-three.show-moreOfThree .dots {
+  display: none;
 }
 
 .ind-services .read-more-btn-three {
@@ -407,6 +423,10 @@ body {
   display: inline;
 }
 
+.ind-services .text-four.show-moreOfFour .dots {
+  display: none;
+}
+
 .ind-services .read-more-btn-four {
   margin-top: 10px;
   padding: 10px;
@@ -433,6 +453,10 @@ body {
   display: inline;
 }
 
+.ind-services .text-five.show-moreOfFive .dots {
+  display: none;
+}
+
 .ind-services .read-more-btn-five {
   margin-top: 10px;
   padding: 10px;
@@ -457,6 +481,10 @@ body {
 
 .ind-services .text-six.show-moreOfSix .moreText-six {
   display: inline;
+}
+
+.ind-services .text-six.show-moreOfSix .dots {
+  display: none;
 }
 
 .ind-services .read-more-btn-six {
