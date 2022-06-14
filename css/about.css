@@ -300,9 +300,6 @@ body {
   padding: 40px 40px;
 }
 
-.vision img {
-}
-
 .vision h2 {
   font-family: "Titillium Web", sans-serif;
   font-size: 35px;
@@ -320,9 +317,6 @@ body {
 .comp-advantage {
   padding: 30px 20px;
   background-color: rgb(17, 17, 122);
-}
-
-.comp-advantage img {
 }
 
 .comp-advantage h2 {
